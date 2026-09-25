@@ -182,9 +182,10 @@ const app = document.getElementById("app");
 
 const ACCESS = {
   enabled: true,
-  hash: "2e20982e4463cf362019b0dffea2b9b6d04ce82ef3b6b6aeeb4e9db5836da9b6",
-  rememberDays: 30
+  hash: "2e20982e4463cf362019b0dffea2b9b6d04ce82ef3b6b6aeeb4e9db5836da9b6"
 };
+
+let accessGranted = false;
 
 async function sha256(value) {
   if (!window.crypto?.subtle) throw new Error("Este navegador no permite validar el acceso. Ábrelo desde HTTPS.");
@@ -194,12 +195,10 @@ async function sha256(value) {
 }
 function accessIsValid() {
   if (!ACCESS.enabled) return true;
-  const until = Number(localStorage.getItem("madridRioAccessUntil") || 0);
-  return until > Date.now();
+  return accessGranted;
 }
 function grantAccess() {
-  const until = Date.now() + ACCESS.rememberDays*24*60*60*1000;
-  localStorage.setItem("madridRioAccessUntil", String(until));
+  accessGranted = true;
 }
 function renderAccessGate() {
   document.title = "Vet Guide · Acceso";
