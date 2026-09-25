@@ -1,7 +1,7 @@
 {
-  "name": "Madrid Vets · Guía veterinaria",
-  "short_name": "Madrid Vets",
-  "description": "Guía veterinaria personal con protocolos de medicación y calculadora de dosis.",
+  "name": "Vet Guide",
+  "short_name": "Vet Guide",
+  "description": "Guía veterinaria de consulta profesional.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

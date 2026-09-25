@@ -1,4 +1,4 @@
-# Madrid Vets · Guía veterinaria
+# Vet Guide · Guía veterinaria
 
 PWA personal para consulta rápida de protocolos de medicación y cálculo de dosis en pequeños animales.
 
@@ -7,12 +7,12 @@ PWA personal para consulta rápida de protocolos de medicación y cálculo de do
 ## Portada
 
 **MR**  
-**Madrid Vets**  
+**Vet Guide**  
 *Guía para sobrevivir a la consulta… o al menos parecer que lo tienes todo controlado y acabar el turno con el pelo en su sitio.*
 
 ## Publicar en GitHub Pages
 
-1. Crea un repositorio nuevo, por ejemplo `madrid-rio-vet-guide`.
+1. Crea un repositorio nuevo, por ejemplo `vet-guide`.
 2. Sube **todos** los archivos de esta carpeta a la raíz del repositorio.
 3. En GitHub entra en **Settings → Pages**.
 4. En **Build and deployment**, elige **Deploy from a branch**.
